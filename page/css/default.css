@@ -92,6 +92,7 @@ img {
 
 .navbar-default {
   background-color: white;
+  border-color: transparent;
 }
 
 .navbar .navbar-nav {
