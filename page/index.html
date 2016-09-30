@@ -20,15 +20,9 @@
 </head>
 
 <body>
-  <div class="jumbotron" id="home">
-      <p><img src="./pictures/gt-icon.png" width="300px"/></p>
-      <p class="lead">
-          The Glamorous Toolkit is the <br/> moldable development environment. For Pharo. <br/> Because we believe that your system is too special </br> to leave it in the hands of generic tools.</p>
-      <a href="https://ci.inria.fr/moose/job/gtoolkit/lastSuccessfulBuild/artifact/gtoolkit.zip" class="btn btn-lg btn-custom">download the latest image</a>
-  </div>
 
   <div id="nav">
-      <div class="navbar navbar-default navbar-static">
+      <div class="navbar navbar-default navbar-static navbar-fixed-top">
         <div class="container">
           <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="glyphicon glyphicon-bar"></span>
@@ -53,139 +47,167 @@
   </div>
 
   <div class="container">
-
-  <div class="row vspace" id="playinspector">
-    <div class="col-lg-12">
-    <h1>Playground &amp; Inspector</h1>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="jumbotron" id="home">
+              <p><img src="./pictures/gt-icon.png" width="300px"/></p>
+              <p class="lead">
+                  The Glamorous Toolkit is the moldable development environment. For Pharo. Because we believe that your system is too special to leave it in the hands of generic tools.
+              </p>
+              <p><a href="https://ci.inria.fr/moose/job/gtoolkit/lastSuccessfulBuild/artifact/gtoolkit.zip" class="btn btn-lg btn-custom">Download the latest image</a></p>
+        </div>
+      </div>
+      <div class="col-lg-8">
+         	<p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/XWOOJa3kEa0" frameborder="0" allowfullscreen></iframe>
+          </p>
+          <p class="center"><a href="https://www.youtube.com/watch?v=XWOOJa3kEa0" class="btn btn-lg btn-default">Watch the overview presentation from ESUG 2016</a></p>
+      </div>
+      <div class="col-lg-4">
+         	<p class="center">
+            <img src="pictures/andreichis-phd-moldabletools.jpg" height="315"/>
+          </p>
+          <p class="center"><a href="http://scg.unibe.ch/archive/phd/chis-phd.pdf" class="btn btn-lg btn-default">Read Andrei's thesis</a></p>
+      </div>
     </div>
-    <div class="col-lg-4">
-         <p class="lead">The GT Inspector lets you define custom presentations for each and every object. And then it enables you to navigate through them. Inexpensively.</p>
-        <p class="lead">The GT Playground powers up the workspace with an inspector and makes the code part of the flow.</p>
+  </div>
 
-        <p>Learn more:<br/>
-        <a href="http://www.humane-assessment.com/blog/the-moldable-gtinspector-deconstructed">Blog post: GTInspector deconstructed</a><br/>
-        <a href="http://scg.unibe.ch/research/moldableinspector">Page: Moldable inspector</a><br/>
-        <a href="http://www.humane-assessment.com/blog/introducing-the-gtplayground/">Blog post: Introducing GTPlayground</a><br/>
-        <a href="http://www.humane-assessment.com/blog/rethinking-print-it-in-pharo/">Blog post: Rethinking print-it in Pharo</a> <br/>
-        <a href="http://www.humane-assessment.com/blog/rethinking-compilation-notifications-in-pharo/">Blog post: Rethinking compilation notifications in Pharo</a>    
-      </p>
-        <!--p><img src="pictures/esug2014.png" width="100"></img></p-->
-    </div>
-    <div class="col-lg-8">
-        <p><img src="pictures/playground-inspector.png"/></p>
-        <p>
-        	<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLqvTNJtc942AeEQvxvbuRnfdqLoXwEh2X" frameborder="0" allowfullscreen></iframe>
+
+
+  <div class="container vspace">
+
+    <div class="row vspace" id="playinspector">
+      <div class="col-lg-12">
+      <h1>Playground &amp; Inspector</h1>
+      </div>
+      <div class="col-lg-4">
+           <p class="lead">The GT Inspector lets you define custom presentations for each and every object. And then it enables you to navigate through them. Inexpensively.</p>
+          <p class="lead">The GT Playground powers up the workspace with an inspector and makes the code part of the flow.</p>
+
+          <p>Learn more:<br/>
+          <a href="http://www.humane-assessment.com/blog/the-moldable-gtinspector-deconstructed">Blog post: GTInspector deconstructed</a><br/>
+          <a href="http://scg.unibe.ch/research/moldableinspector">Page: Moldable inspector</a><br/>
+          <a href="http://www.humane-assessment.com/blog/introducing-the-gtplayground/">Blog post: Introducing GTPlayground</a><br/>
+          <a href="http://www.humane-assessment.com/blog/rethinking-print-it-in-pharo/">Blog post: Rethinking print-it in Pharo</a> <br/>
+          <a href="http://www.humane-assessment.com/blog/rethinking-compilation-notifications-in-pharo/">Blog post: Rethinking compilation notifications in Pharo</a>    
         </p>
-    </div>
-  </div>
-
-  <div class="row vspace" id="spotter">
-    <div class="col-lg-12">
-      <h1>Spotter</h1>
-    </div>
-    <div class="col-lg-4">
-       <p class="lead">The GT Spotter lets you search through objects. It is extensible like the inspector. Each object can define its own search processors.</p>
-
-        <p>Learn more:<br/>
-        <a href="http://www.humane-assessment.com/blog/introducing-gtspotter">Blog post: Introducing GTSpotter</a> <br/>
-        <a href="http://www.humane-assessment.com/blog/boosting-gtspotter-with-preview">Blog post: Boosting GTSpotter with preview</a> <br/>
-        <a href="http://www.humane-assessment.com/blog/short-spotter-demos">Blog post: Spotter demos</a><br/>
-        <a href="http://www.humane-assessment.com/blog/spotting-senders-references-with-gtspotter">Blog post: Spotting senders and references with GTSpotter</a><br/>
-        <a href="http://www.humane-assessment.com/blog/discovering-and-managing-spotter-extensions/">Blog post: Discovering and managing GTSpotter extensions</a>
-      </p>
-    </div>
-    <div class="col-lg-8">
-      <p><img src="pictures/spotter.png"/></p>
-      <p>
-      	<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLqvTNJtc942AlXWggTOKMoGrO76pXENTu" frameborder="0" allowfullscreen></iframe>
-      </p>
-    </div>
-  </div>
-
-  <div class="row vspace" id="debugger">
-    <div class="col-lg-12">
-      <h1>Debugger</h1>
-    </div>
-    <div class="col-lg-4">
-         <p class="lead">The GT Debugger lets you build custom debuggers that can be switched to during debugging time.</p>
-
-        <p>Learn more:<br/>
-        <a href="http://scg.unibe.ch/research/moldabledebugger">Page: Moldable Debugger</a><br/>
-        <a href="http://www.humane-assessment.com/blog/debugging-tests-and-parsers-with-gtdebugger-demo/">Blog post: Debugging tests and parsers with GTDebugger (demo)</a></p>
-    </div>
-    <div class="col-lg-8">
-      <p><img src="pictures/debugger.png"/></p>
-    </div>
-  </div>
-
-  <div class="row vspace" id="examples">
-    <div class="col-lg-12">
-      <h1>Examples</h1>
-    </div>
-    <div class="col-lg-4">
-         <p class="lead">The GT Examples is a slim engine that lets you define examples throughout the code and use them for documentation or testing. Through Examples, a developer can switch rapidly from the static code to a live environment and program in the presence of objects.</p>
-
-        <!--p>Learn more:<br/>
-        <a href="http://scg.unibe.ch/research/moldabledebugger">scg.unibe.ch/research/moldabledebugger</a><br/>
-        <a href="http://www.humane-assessment.com/blog/debugging-tests-and-parsers-with-gtdebugger-demo/">humane-assessment.com/blog/debugging-tests-and-parsers-with-gtdebugger-demo</a></p-->
-    </div>
-    <div class="col-lg-8">
-      <p><img src="pictures/examples.png"/></p>
-    </div>
-  </div>
-
-  <div class="row vspace" id="install">
-    <div class="col-lg-12">
-        <h1>Install</h1>
-    </div>
-    <div class="col-lg-6">
-        <p class="lead">
-          The Core versions of Playground, Inspector, Spotter and Debugger are available out of the box in Pharo 5.0 and Pharo 6.0.
-        </p>
-        <p class="lead">
-          For a full experience, including Examples and visualizations powered by Roassal, <a href="https://ci.inria.fr/moose/job/gtoolkit/lastSuccessfulBuild/artifact/gtoolkit.zip">download a premade image</a> on top of Pharo 6.0.</p>
-
-        <p class="lead">Or install it by yourself in a Pharo 6.0 image:</p>
-        <pre>
-Gofer new
-     smalltalkhubUser: 'Moose' project: 'GToolkit';
-     configuration;
-     loadDevelopment.</pre>
-    </div>
-  </div>
-
-
-  <div class="row vspace" id="team">
-    <div class="col-lg-12">
-        <h1>Team</h1>
-         <p class="lead"> <a href="https://twitter.com/Chis_Andrei">@Chis_Andrei</a> |
-        <a href="http://andreichis.com">andreichis.com</a></p>
-
-         <p class="lead"> <a href="https://twitter.com/girba">@girba</a> |
-        <a href="http://tudorgirba.com">tudorgirba.com</a></p>
-
-         <p class="lead"> <a href="https://twitter.com/jurajkubelka">@jurajkubelka</a> </p>
-
-         <p class="lead"> <a href="https://twitter.com/stefanreichhart">@stefanreichhart</a> </p>
-
-         <p class="lead"> <a href="https://twitter.com/AliakseiSyrel">@AliakseiSyrel</a> | <a href="https://github.com/syrel">github/syrel</a> 
-         </p>
-
-  <!--div class="row vspace">
-    <div class="col-lg-12">
-         <h1>Powered by</h1>
-         <p>
-          <a href="http://pharo.org"><img src="pictures/pharo-icon.png" width="100"/></a>
-         <a href="http://moosetechnology.org"><img src="pictures/moose-icon.png"  width="100"/></a>
-         </p>        
-
-        <h2>Stay tuned for more</h2>
-        <p>We have more in store. Stay tuned. Join the <a href="http://pharo.org/community">Pharo</a> or the <a href="http://www.moosetechnology.org/about/contact">Moose</a> communities.
-
+          <!--p><img src="pictures/esug2014.png" width="100"></img></p-->
+      </div>
+      <div class="col-lg-8">
+          <p><img src="pictures/playground-inspector.png"/></p>
+          <p>
+          	<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLqvTNJtc942AeEQvxvbuRnfdqLoXwEh2X" frameborder="0" allowfullscreen></iframe>
+          </p>
       </div>
     </div>
 
-  </div-->
+    <div class="row vspace" id="spotter">
+      <div class="col-lg-12">
+        <h1>Spotter</h1>
+      </div>
+      <div class="col-lg-4">
+         <p class="lead">The GT Spotter lets you search through objects. It is extensible like the inspector. Each object can define its own search processors.</p>
+
+          <p>Learn more:<br/>
+          <a href="http://www.humane-assessment.com/blog/introducing-gtspotter">Blog post: Introducing GTSpotter</a> <br/>
+          <a href="http://www.humane-assessment.com/blog/boosting-gtspotter-with-preview">Blog post: Boosting GTSpotter with preview</a> <br/>
+          <a href="http://www.humane-assessment.com/blog/short-spotter-demos">Blog post: Spotter demos</a><br/>
+          <a href="http://www.humane-assessment.com/blog/spotting-senders-references-with-gtspotter">Blog post: Spotting senders and references with GTSpotter</a><br/>
+          <a href="http://www.humane-assessment.com/blog/discovering-and-managing-spotter-extensions/">Blog post: Discovering and managing GTSpotter extensions</a>
+        </p>
+      </div>
+      <div class="col-lg-8">
+        <p><img src="pictures/spotter.png"/></p>
+        <p>
+        	<iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLqvTNJtc942AlXWggTOKMoGrO76pXENTu" frameborder="0" allowfullscreen></iframe>
+        </p>
+      </div>
+    </div>
+
+    <div class="row vspace" id="debugger">
+      <div class="col-lg-12">
+        <h1>Debugger</h1>
+      </div>
+      <div class="col-lg-4">
+           <p class="lead">The GT Debugger lets you build custom debuggers that can be switched to during debugging time.</p>
+
+          <p>Learn more:<br/>
+          <a href="http://scg.unibe.ch/research/moldabledebugger">Page: Moldable Debugger</a><br/>
+          <a href="http://www.humane-assessment.com/blog/debugging-tests-and-parsers-with-gtdebugger-demo/">Blog post: Debugging tests and parsers with GTDebugger (demo)</a></p>
+      </div>
+      <div class="col-lg-8">
+        <p><img src="pictures/debugger.png"/></p>
+      </div>
+    </div>
+
+    <div class="row vspace" id="examples">
+      <div class="col-lg-12">
+        <h1>Examples</h1>
+      </div>
+      <div class="col-lg-4">
+           <p class="lead">The GT Examples is a slim engine that lets you define examples throughout the code and use them for documentation or testing. Through Examples, a developer can switch rapidly from the static code to a live environment and program in the presence of objects.</p>
+
+          <!--p>Learn more:<br/>
+          <a href="http://scg.unibe.ch/research/moldabledebugger">scg.unibe.ch/research/moldabledebugger</a><br/>
+          <a href="http://www.humane-assessment.com/blog/debugging-tests-and-parsers-with-gtdebugger-demo/">humane-assessment.com/blog/debugging-tests-and-parsers-with-gtdebugger-demo</a></p-->
+      </div>
+      <div class="col-lg-8">
+        <p><img src="pictures/examples.png"/></p>
+      </div>
+    </div>
+
+    <div class="row vspace" id="install">
+      <div class="col-lg-12">
+          <h1>Install</h1>
+      </div>
+      <div class="col-lg-6">
+          <p class="lead">
+            The Core versions of Playground, Inspector, Spotter and Debugger are available out of the box in Pharo 5.0 and Pharo 6.0.
+          </p>
+          <p class="lead">
+            For a full experience, including Examples and visualizations powered by Roassal, <a href="https://ci.inria.fr/moose/job/gtoolkit/lastSuccessfulBuild/artifact/gtoolkit.zip">download a premade image</a> on top of Pharo 6.0.</p>
+
+          <p class="lead">Or install it by yourself in a Pharo 6.0 image:</p>
+          <pre>
+  Gofer new
+       smalltalkhubUser: 'Moose' project: 'GToolkit';
+       configuration;
+       loadDevelopment.</pre>
+      </div>
+    </div>
+
+
+    <div class="row vspace" id="team">
+      <div class="col-lg-12">
+          <h1>Team</h1>
+           <p class="lead"> <a href="https://twitter.com/Chis_Andrei">@Chis_Andrei</a> |
+          <a href="http://andreichis.com">andreichis.com</a></p>
+
+           <p class="lead"> <a href="https://twitter.com/girba">@girba</a> |
+          <a href="http://tudorgirba.com">tudorgirba.com</a></p>
+
+           <p class="lead"> <a href="https://twitter.com/jurajkubelka">@jurajkubelka</a> </p>
+
+           <p class="lead"> <a href="https://twitter.com/stefanreichhart">@stefanreichhart</a> </p>
+
+           <p class="lead"> <a href="https://twitter.com/AliakseiSyrel">@AliakseiSyrel</a> | <a href="https://github.com/syrel">github/syrel</a> 
+           </p>
+
+    <!--div class="row vspace">
+      <div class="col-lg-12">
+           <h1>Powered by</h1>
+           <p>
+            <a href="http://pharo.org"><img src="pictures/pharo-icon.png" width="100"/></a>
+           <a href="http://moosetechnology.org"><img src="pictures/moose-icon.png"  width="100"/></a>
+           </p>        
+
+          <h2>Stay tuned for more</h2>
+          <p>We have more in store. Stay tuned. Join the <a href="http://pharo.org/community">Pharo</a> or the <a href="http://www.moosetechnology.org/about/contact">Moose</a> communities.
+
+        </div>
+      </div>
+
+    </div-->
 
  </div> <!-- /container -->
 
@@ -194,7 +216,7 @@ Gofer new
  <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-    <script>
+    <!-- <script>
     /* highlight the top nav as scrolling occurs */
     /*$('body').scrollspy({ target: '#nav' })*/
 
@@ -203,6 +225,6 @@ Gofer new
         top: $('#home').height()
       }
 }); 
-    </script>
+    </script> -->
 
 </body></html>

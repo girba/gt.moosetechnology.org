@@ -10,6 +10,22 @@ a:hover {
   color: #2856B6;
 }
 
+p.center {
+  text-align: center;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
 .btn-custom {
   background-color: #2856B6;
   border-color: #2856B6;
@@ -50,6 +66,7 @@ img {
 .jumbotron {
   text-align: center;
   background-color: white;
+  margin-top: 50px;
 }
 
 .jumbotron .btn {
